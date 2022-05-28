@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Score Keeper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Code+Pro:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="cricket.css">
+</head>
+
+<body>
+    <div id="loader"></div>
+
+    <div class="navigation">
+       
+        <div class="lottie">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_ve2idx3p.json" background="transparent"
+                speed="1" style="width: 150px; height: 150px;" loop autoplay>
+            </lottie-player> 
+        </div>
+        <h1>भारत
+            <span id="indScore">0</span>
+            <span id="indWic">0</span>
+            vs पाकिस्तान: <span id="pakScore">0</span>
+            <span id="pakWic">0</span>
+        </h1>
+    </div>
+
+    <div class="full">
+        <div id="Buttons">
+            <button id="one">One</button>
+            <button id="two">Two</button>
+            <button id="three">Three</button>
+            <button id="four">Four</button>
+            <button id="six">Six</button>
+            <button id="wic">Wicket</button>
+            <button id="dot">Dot</button>
+        </div>
+        <div class="matches">
+        <h2><span id="balls">Waiting</span><span id="text"> for Match to Begin</span></h2>
+        <h2 id="status">Match Not Yet Started</h2>
+        <button id="start">Start Match</button>
+    </div>
+    </div>
+
+
+    <footer>Made with <span id="hrt">&#9829;</span> from Cricket World</footer>
+
+    <script src="cricket.js"></script>
+
+</body>
+
+</html>
